@@ -64,13 +64,15 @@ export class ContactService {
   }
 
   /** 
-   * PUT: update an existing contact to the database 
-   */
-  updateContact(contact: Contact | number): Observable<any> {
+     * PUT: update an existing contact to the database 
+     */
+    updateContact(contact: Contact): Observable<any> {
+      const id = typeof contact === 'number' ? contact : contact.id;
+      const url = `${this.baseUrl}/${id}`;
       return this.http
-          .put(this.baseUrl, contact, httpOptions)
+          .put(url, contact, httpOptions)
           .pipe(
-              tap((contact: Contact) => this.notify(`updated contact id=${contact.id}`, 'PUT')),
+              tap(_ => this.notify(`updated contact id=${contact.id}`, 'PUT')),
               catchError(this.handleError('updateContact', 'PUT'))
           );
   }

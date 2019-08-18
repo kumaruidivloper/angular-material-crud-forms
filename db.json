@@ -155,15 +155,26 @@
       "zip": "11231"
     },
     {
-      "firstName": "dsadas",
+      "id": 15,
+      "firstName": "Kumar",
       "lastName": "dsadsd",
       "email": "sadas@fdsfsd.com",
       "work": "design",
       "street": "csasdsad",
       "city": "dsadsa",
       "state": "dasdsadsad",
-      "zip": "53455",
-      "id": 15
+      "zip": "53455"
+    },
+    {
+      "id": 16,
+      "firstName": "Vasuki",
+      "lastName": "Bala",
+      "email": "bsbkumarmax@gmail.com",
+      "work": "deploy",
+      "street": "Channasandra Main Road, HopeFarm",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "zip": "560066"
     }
   ]
 }
